@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.medd.tests4less.Confirmation"
+    android:background="@color/windowBackground">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="50dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/pathlay"
+                android:visibility="gone">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pathology"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView_your_option" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/COUPON_CODE_IS"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="65dp"
+                            android:id="@+id/textView_couponCodeIs" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="XXXXX"
+                            android:paddingLeft="2dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/darkblue"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/confirmation_coupon_code" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_confirmed"
+                        android:textSize="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/Booking_Confirmed"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="20dp"
+                        android:text="Day and Date"
+                        android:id="@+id/book_date"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/PatientName"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView_patientname" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient's name"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/confirmation_patient_name" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/testblock"
+                    >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/YOUR_TEST"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView_your_test" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test names"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/confirmation_test_names" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CENTER"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView_center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Center name"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/confirmation_centre_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:text="addresslong add,long add, longg add,long, long,lo ngng"
+                        android:textSize="15dp"
+                        android:textColor="@color/grey"
+                        android:id="@+id/confirmation_centre_address"
+                        android:layout_weight="0.5"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/direction_conf"
+                        android:background="#00ffffff"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/direction"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+
+
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView_due_amount" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/confirmation_due_amount" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mode"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/t" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab Visit"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/labmodepatho" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutlabchargespatho"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Extra Home-Collection Charge"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/tvla1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 100"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/tvlabchargespatho" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/radlay"
+            android:visibility="gone">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_your_option_path"
+                    android:text="Radiology" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/COUPON_CODE_IS"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="65dp"
+                        android:id="@+id/textView_couponCodeIspath" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="XXXXX"
+                        android:paddingLeft="2dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:id="@+id/confirmation_coupon_code_path" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/booking_confirmed"
+                    android:textSize="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/Booking_Confirmed_path"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="20dp"
+                    android:text="Day and Date"
+                    android:id="@+id/book_date_path"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PatientName"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_patientna" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient's name"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/confirmation_patient_name_path" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/testblockpath"
+                >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/YOUR_TEST"
+                    android:textSize="15dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test names"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/confirmation_test_names_path" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CENTER"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_center_path" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Center name"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/confirmation_centre_name_path" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:text="addresslong add,long add, longg add,long, long,lo ngng"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey"
+                    android:id="@+id/confirmation_centre_address_path"
+                    android:layout_weight="0.5"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/direction_conf_path"
+                    android:background="#00ffffff"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/direction"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_due_amount_path" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/confirmation_due_amount_path" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mode"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_due_am" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lab Visit"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/confirmat" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </LinearLayout>
+</LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:id="@+id/hintbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/info_26"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can access your past orders by browsing the side menu accessible by swiping in from the left at the home activity.Show this code at the center to avail discounts."
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:textColor="@color/darkblue"
+                    android:id="@+id/hint_confirmation" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/feed_item_margin"
+                android:layout_marginRight="@dimen/feed_item_margin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list_item"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                android:elevation="2dp"
+                android:id="@+id/shareLayout"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHARE THE LOVE"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:textColor="@color/darkblue"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        rv_centered="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK TO HOME"
+            android:textColor="@color/white"
+            android:id="@+id/moretest"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            />
+
+
+
+    </com.andexert.library.RippleView>
+
+</RelativeLayout>

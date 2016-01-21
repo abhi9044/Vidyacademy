@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:background="@color/windowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"    android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:src="@drawable/locationsearch_32"
+                        android:layout_centerVertical="true"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_location"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:background="@color/windowBackground"
+                        android:spinnerMode="dropdown"
+                        android:popupBackground="@color/windowBackground"/>
+
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal" >
+                    <AutoCompleteTextView
+                        android:id="@+id/searchEditText"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textNoSuggestions|textUri"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:hint="Search for a Test eg:MRI Brain"
+                        android:textColorHint="@color/grey"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/heart_monitor_26"
+                        android:drawableStart="@drawable/heart_monitor_26"
+                        android:background="@drawable/autoborder"
+                        android:popupBackground="@color/windowBackground">
+                    <!-- android:background="@color/windowBackground"-->
+
+                        <requestFocus />
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+<LinearLayout
+    android:id="@+id/tutorial_hidden"
+    android:orientation="horizontal"
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tut_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:src="@drawable/up_arrow_left"
+         />
+    <TextView
+        android:id="@+id/Tut"
+        android:layout_marginLeft="20dip"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:text="Start typing the test you want and choose the most suitable from dropdown which would show.Keep repeating for all the tests you want."
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/List_tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:divider="@color/primary"
+            android:layout_above="@+id/bookhealth"
+            android:dividerHeight="4px">
+        </ListView>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bookTests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="CONTINUE"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:width="170dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

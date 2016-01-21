@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/deals_listviewnew"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:background="@color/listviewbg"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp" />
+
+        <TextView
+
+            android:id="@+id/no_result"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:text="Sorry! We don't have any deals listed now. Call us at 88793-99793 to book over phone."
+            android:textColor="@color/dark_grey"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

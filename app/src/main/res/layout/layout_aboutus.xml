@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    >
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView10"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/temp_pn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvvers"
+        android:textColor="#000000"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:text="v2.2.2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvbout"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textIsSelectable="false"
+        android:password="false"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/about"
+        android:layout_above="@+id/btc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Terms and Conditions"
+        android:id="@+id/btc"
+        android:background="@drawable/city_button_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+
+        android:textStyle="bold"
+        android:textSize="13dp" />
+</RelativeLayout>

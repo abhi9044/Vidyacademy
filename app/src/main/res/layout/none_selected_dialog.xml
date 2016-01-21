@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dip"
+   >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:padding="10dp"
+        android:src="@drawable/microscope_black_32"
+    />
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Please Select at least one test before proceeding"
+        android:id="@+id/textView4"
+        android:textSize="15dip"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>

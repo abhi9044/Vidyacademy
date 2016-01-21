@@ -1,0 +1,43 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id = "@+id/container"
+    android:background="@color/windowBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:id="@+id/eventsListview"
+            android:background="@color/listviewbg"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/dark_grey"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:text="No upcoming events.Call us at 88793-99793 to organize a Free Health Checkup Camp at your society."
+            android:id="@+id/no_result"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

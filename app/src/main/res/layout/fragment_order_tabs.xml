@@ -1,0 +1,269 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:id="@+id/orderTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/labTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/feed_item_margin"
+                    android:layout_marginRight="@dimen/feed_item_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/list_item"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/tests" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="10dp"
+                            android:text="Book Lab Tests"
+                            android:textColor="@color/primary"
+                            android:textSize="21dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Upto 50% off on all tests"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/healthCheckUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/feed_item_margin"
+                    android:layout_marginRight="@dimen/feed_item_margin"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/list_item"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/checkups" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="10dp"
+                            android:text="Health Checkups"
+                            android:textColor="@color/primary"
+                            android:textSize="21dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/dealText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="10dp"
+                            android:text="Best Packages from Top labs"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/events_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/feed_item_margin"
+                    android:layout_marginRight="@dimen/feed_item_margin"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/list_item"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/events" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="10dp"
+                            android:text="Events"
+                            android:textColor="@color/primary"
+                            android:textSize="21dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingLeft="10dp"
+                            android:text="Health checkup camps &amp; more"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/apples"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medd Apples"
+                    android:id="@+id/textView11"
+                   android:layout_toRightOf="@+id/imageView5"
+                    android:textColor="@color/primary"
+                    android:textStyle="normal"
+                    android:textSize="21dp"
+                    android:layout_alignParentTop="true" />
+</RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:text="Health Tips and Articles"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp" />
+
+            <ProgressBar
+                android:id="@+id/blog_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="false" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView_blog"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View All Articles"
+                android:id="@+id/bviewall"
+                android:layout_below="@+id/nameblog"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"
+                android:visibility="gone"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>

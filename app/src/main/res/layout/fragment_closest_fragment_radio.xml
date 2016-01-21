@@ -1,0 +1,81 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id = "@+id/container"
+    android:background="@color/windowBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.ksoichiro.android.observablescrollview.ObservableListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_cl"
+            android:layout_width="fill_parent"
+            android:background="@color/listviewbg"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:layout_weight="8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="10dp"
+            android:layout_above="@+id/bnext" />
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/dark_grey"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:text="Sorry! We don't have this test listed now.Call us at 88793-99793 to book over phone."
+            android:id="@+id/no_resultclo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/more1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            rv_centered="true">
+
+        </com.andexert.library.RippleView>
+
+            <Button
+            android:id="@+id/bnext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:width="170dp"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/bcheckout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:width="170dp"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

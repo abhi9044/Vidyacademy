@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="318dp"
+    android:layout_height="250dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rate App"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mind giving us a 5 star rating on Google Play?"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="55dp"
+        android:textColor="#A9A9A9" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgbgood"
+
+        android:background="#ffffff"
+        android:src="@drawable/yessmall"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="4dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imgbgood"
+        android:layout_toRightOf="@+id/imgbgood"
+        android:layout_toEndOf="@+id/imgbgood"
+        android:src="@drawable/yessmall"
+        android:layout_marginLeft="4dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:src="@drawable/yessmall"
+        android:layout_marginLeft="4dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7"
+        android:src="@drawable/yessmall"
+        android:layout_marginLeft="4dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView9"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"
+        android:src="@drawable/yessmall"
+        android:layout_marginLeft="4dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Sure!"
+        android:id="@+id/bfivestar"
+        android:background="@drawable/city_button_layout"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:id="@+id/rate5close"
+        android:src="@drawable/cross"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_toEndOf="@+id/imageView9" />
+
+</RelativeLayout>

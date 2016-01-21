@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:layout_width="fill_parent"
+    android:layout_marginStart="0dp"
+    android:paddingLeft="0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:layout_marginTop="20dip"
+    android:orientation="horizontal"
+    android:layout_marginLeft="0dp">
+
+
+    <!--  Email Label -->
+    <ImageView
+        android:id="@+id/backOTP"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/icback"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginStart="0dp"
+        />
+    <!-- android:layout_marginLeft="-5dp"-->
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:id="@+id/custom_title"
+        android:text="OTP Verification"/>
+    <!-- android:gravity="center"-->
+
+
+    <ImageView
+        android:id="@+id/homeOTP"
+        android:layout_gravity="center"
+        android:src="@drawable/ichome"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <!--        -->
+</LinearLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dividercolor">
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetStart="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        <!-- Framelayout to display Fragments -->
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Listview to display slider menu -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/drawerbg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_lay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/drawer_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+
+                        android:text="Welcome @Medd"
+
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_slidermenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:choiceMode="singleChoice"
+
+                android:divider="@color/dividercolor"
+                android:dividerHeight="0dp"
+                android:listSelector="@drawable/list_selector" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

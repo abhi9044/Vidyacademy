@@ -1,0 +1,106 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+
+        android:background="@drawable/list_item"
+        android:elevation="2dp"
+        android:orientation="vertical"
+
+        android:id="@+id/relativeLayout2"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="1dp"
+        android:paddingTop="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageblog"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blog1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp" />
+
+        <TextView
+            android:id="@+id/nameblog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Blog Details"
+            android:textSize="18dp"
+            android:layout_below="@+id/imageblog"
+            android:layout_alignLeft="@+id/imageblog"
+            android:layout_alignStart="@+id/imageblog"
+            android:layout_toLeftOf="@+id/blogdate"
+            android:layout_toStartOf="@+id/blogdate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:id="@+id/blogdate"
+            android:textColor="#000000"
+            android:layout_above="@+id/contentblog"
+            android:layout_alignRight="@+id/imageblog"
+            android:layout_alignEnd="@+id/imageblog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Content"
+            android:id="@+id/contentblog"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:layout_below="@+id/nameblog"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_alignRight="@+id/blogdate"
+            android:layout_alignEnd="@+id/blogdate"
+            android:layout_alignLeft="@+id/nameblog"
+            android:layout_alignStart="@+id/nameblog" />
+
+        <LinearLayout
+            android:layout_height="35dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/linearLayout2"
+            android:weightSum="2"
+            android:layout_below="@+id/contentblog"
+            android:layout_alignRight="@+id/blogdate"
+            android:layout_alignEnd="@+id/blogdate"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/contentblog"
+            android:layout_alignStart="@+id/contentblog">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moreButton"
+                android:id="@+id/moreblogs"
+                android:layout_weight="0.88"
+                android:background="@drawable/blog_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shareButton"
+                android:id="@+id/shareblog"
+                android:layout_weight="1"
+                android:layout_below="@+id/contentblog"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/blog_button" />
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>

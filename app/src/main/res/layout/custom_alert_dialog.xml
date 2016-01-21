@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/blurrblackbg"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Could not connect to Internet!"
+            android:textSize="20dp"
+            android:textColor="@color/grey"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Please check your internet connection and try again."
+            android:layout_below="@+id/title"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:id="@+id/msg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/back"
+            android:text="Back"
+            android:layout_marginRight="2dp"
+            android:textColor="#2b2b2b"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonshape"
+            android:layout_weight="1"
+            />
+
+        <Button
+
+            android:text="Try again"
+            android:layout_marginLeft="2dp"
+            android:textColor="#2b2b2b"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonshape"
+            android:layout_weight="1"
+            android:id="@+id/try_again"
+          />
+    </LinearLayout>
+</LinearLayout>

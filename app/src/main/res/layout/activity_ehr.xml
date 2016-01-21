@@ -1,0 +1,181 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id = "@+id/container"
+    android:background="@color/windowBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:id="@+id/loggedin"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list_item"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:elevation="2dp"
+        android:id="@+id/profileLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a good Day Meddman"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/primary"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:id="@+id/profile_goodDay"
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileImage"
+            android:src="@drawable/defaultimage"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr. Meddman"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/primary"
+            android:textSize="25sp"
+            android:id="@+id/profile_name"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/profile_gender"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=",Eternity"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/profile_age"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="meddman@medd.in"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/profile_email"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile:"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/phoneStaticText"
+                />
+            <EditText
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="10 digit mobile number"
+                android:paddingTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextsquareborder"
+                android:inputType="textFilter"
+                android:cursorVisible="false"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/primary"/>
+
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:id="@+id/ehr_list"
+            android:background="@color/listviewbg"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:layout_weight="8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/dark_grey"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Sorry! We don't have any test results listed now. Call us at 786-99999-38 for further queries."
+            android:id="@+id/no_result_e"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+   </LinearLayout>
+</ScrollView>
+</LinearLayout>

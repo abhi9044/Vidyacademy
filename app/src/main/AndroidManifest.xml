@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.holamed.meddapp"
+    android:versionCode="17"
+    android:versionName="2.2.4">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+	  IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+	  to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.holamed.meddapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.holamed.meddapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".AppControllerSearchTests"
+        android:allowBackup="true"
+        android:icon="@drawable/temp_pn"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:logo="@drawable/temp_pn"
+        android:theme="@style/AppCompatTheme"
+        tools:node="replace">
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_acjTVA7ZjYaNpvLyMc79ogmfuqdi3nxd" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="key_live_acjTVA7ZjYaNpvLyMc79ogmfuqdi3nxd" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Registration"
+            android:label="Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Registration_Events"
+            android:label="RegisterEvents"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Confirmation_Events"
+            android:label="Confirmation_Events"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SearchTests"
+            android:label="Medd"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="book.medd.in" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="medd.in" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImportFirstTime"
+            android:label="@string/title_activity_import_first_time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategorySearch"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme.NoActionBar" />
+        <activity
+            android:name=".CategorySearchRadio"
+            android:label="CategorySearchRadio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme.NoActionBar" />
+        <activity
+            android:name=".OTPReceiveActivity"
+            android:label="OTPReceiveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".CategorySearchPatho"
+            android:label="CategorySearchPatho"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme.NoActionBar" />
+        <activity
+            android:name=".Detailed_result"
+            android:label="@string/title_activity_detailed_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Detailed_Blogs"
+            android:label="Detailed_Blogs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".All_Blogs"
+            android:label="Detailed_Blogs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Detailed_result_patho"
+            android:label="title_activity_detailed_result_patho"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Detailed_result_radio"
+            android:label="@string/activity_detailed_result_radio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Confirmation"
+            android:label="@string/title_activity_confirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HealthCheckUp_Date_Select"
+            android:label="HealthCheckUp_Date_Select"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ConfirmationRadpath"
+            android:label="ConfirmationRadPath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmationHealth"
+            android:label="ConfirmationHealth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Memo"
+            android:label="memo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TutorialActivityMedd"
+            android:label="@string/title_activity_tutorial_activity_medd" />
+        <activity
+            android:name=".SecondActivityMain"
+            android:label="@string/title_activity_second_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme">
+            <intent-filter>
+                <intent-filter>
+                    <data android:scheme="bookmedd" />
+                    <data android:scheme="http" />
+                    <data android:scheme="https" />
+                    <data android:host="medd.in" />
+                    <data android:host="book.medd.in" />
+                    <data android:host="open" />
+
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                </intent-filter>
+
+                <data android:scheme="bookmedd" />
+                <data android:host="open" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HealthCheckUp"
+            android:label="@string/title_activity_health_check_up" />
+        <activity
+            android:name=".DealsDetails"
+            android:label="@string/title_activity_deals_details" />
+        <activity
+            android:name=".RegistrationHealth"
+            android:label="RegistrationHealth" />
+        <activity
+            android:name=".HealthCheckUpNew"
+            android:label="HealthCheckupNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PastPatients"
+            android:label="PastPatients"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.holamed.meddapp" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ImagePreview"
+            android:label="@string/title_activity_image_preview"
+            android:theme="@style/AppCompatTheme.NoActionBar" />
+        <!--
+		<activity
+			android:name=".PreviousFragment"
+			android:label="@string/title_activity_previous_fragment" >
+		</activity>
+		<activity
+			android:name=".CommonPathalogyFragment"
+			android:label="@string/title_activity_common_pathalogy_fragment" >
+		</activity>
+		<activity
+			android:name=".logoutFragment"
+			android:label="@string/title_activity_logout_fragment" >
+		</activity>
+        -->
+        <activity
+            android:name=".EHR"
+            android:label="@string/title_activity_ehr" />
+        <activity
+            android:name=".EHRDetails"
+            android:label="@string/title_activity_ehrdetails" />
+        <activity
+            android:name=".FacebookCheckActivity"
+            android:label="@string/title_activity_facebook_check" />
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback" />
+        <activity
+            android:name=".Terms"
+            android:label="@string/title_activity_terms" />
+    </application>
+
+</manifest>

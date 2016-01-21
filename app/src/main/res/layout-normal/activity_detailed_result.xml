@@ -1,0 +1,447 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="50dp"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical"
+
+            android:background="@color/windowBackground"
+            tools:context="com.example.medd.tests4less.Detailed_result">
+            <RelativeLayout
+                android:background="@drawable/lab_image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:clipChildren="false"
+                android:id="@+id/lay_for_labImage"
+                >
+                <TextView
+                    android:id="@+id/lab_name_d"
+                    android:text="CENTRAL LAB"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    />
+                <RelativeLayout
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/roundboundry">
+                    <TextView
+                        android:id="@+id/rating_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.1"
+                        android:textColor="@color/transparent"
+                        android:typeface="sans"
+                        android:textSize="18dp"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lab_address_d"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="24, Ground Floor, Glen Rose Building"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="normal"/>
+                     <!--   <ImageButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/direction"
+                            android:background="#00ffffff"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/direction"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="0dp"
+
+                            /> -->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="PHONE"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/lab_phone_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="647268474"
+                            android:autoLink="phone"
+                            android:linksClickable="true"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:textSize="14sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="EMAIL"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/lab_email_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lalala@gmail.in"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:textSize="14sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="PRICE"
+                            android:paddingLeft="19dp"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/cost_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs300"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:textSize="14sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="wrap_content"
+                            android:text="SAVING"
+                            android:textColor="@color/black"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/saving_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs400"
+                            android:textColor="@color/darkblue"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/listprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" (List Price:\u20B9"
+                            android:textColor="@color/dark_grey"
+                            android:typeface="sans"
+                            android:textSize="13sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:layout_marginTop="10dip"
+                            android:textStyle="normal"/>
+                        <TextView
+                            android:id="@+id/mrp_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="700)"
+                            android:textColor="@color/dark_grey"
+                            android:typeface="sans"
+                            android:textSize="13sp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:layout_marginTop="10dip"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:background="@color/bggrey"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+                        <ImageView
+                            android:id="@+id/ac_boolean_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/checkmark_24"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/airconditioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Air conditioning"
+                            android:textColor="#040404"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <ImageView
+                            android:id="@+id/homecollection_boolean_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/mutliply_filled_25"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/homecollection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home collection"
+                            android:textColor="#040404"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="60dp"
+
+                    android:layout_marginTop="5dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/cc_accept_boolean_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/checkmark_24"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/creditcardsaccepted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cards Accepted"
+                            android:textColor="#040404"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+
+                        >
+                        <ImageView
+                            android:id="@+id/ambulance_boolean_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:layout_alignParentRight="true"
+
+                            android:src="@drawable/mutliply_filled_25"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+                            android:id="@+id/ambulance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parking"
+                            android:textColor="#040404"
+                            android:typeface="sans"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textStyle="normal"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/list_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dip"
+                    android:divider="@color/primary"
+                    android:dividerHeight="4px">
+                </ListView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/bookLab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:width="170dp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+</RelativeLayout>

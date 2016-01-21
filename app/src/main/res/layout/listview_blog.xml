@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+
+        android:background="@drawable/list_item"
+        android:elevation="2dp"
+        android:orientation="vertical"
+
+        android:id="@+id/relativeLayout2"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageblog"
+            android:src="@drawable/blog1"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp" />
+
+        <TextView
+            android:id="@+id/nameblog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Blog Details"
+            android:textSize="18dp"
+            android:layout_toLeftOf="@+id/blogdate"
+            android:textColor="#000000"
+            android:layout_below="@+id/imageblog"
+            android:layout_alignLeft="@+id/imageblog"
+            android:layout_alignStart="@+id/imageblog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:id="@+id/blogdate"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/nameblog"
+            android:layout_marginTop="5dp"
+            android:layout_alignRight="@+id/imageblog"
+            android:layout_alignEnd="@+id/imageblog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Content"
+            android:id="@+id/contentblog"
+            android:autoLink="web|email|phone"
+            android:linksClickable="true"
+            android:layout_alignLeft="@+id/nameblog"
+            android:layout_alignStart="@+id/nameblog"
+            android:layout_below="@+id/nameblog"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_alignRight="@+id/blogdate"
+            android:layout_alignEnd="@+id/blogdate" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

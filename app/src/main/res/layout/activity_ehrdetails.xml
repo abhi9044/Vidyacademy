@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/list_item"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profileIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/profileFontAwesome"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#606B6C"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/personname_ehr_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Patient Name"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#606B6C"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/calenderFontAwesome"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#606B6C"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ehr_date_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dd/mm/yy"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#606B6C"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/downIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:text="@string/doubleDownFontAwesome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#7f8c8d"
+            android:textSize="30sp"
+            android:layout_below="@+id/labContainer"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/nameContainer"
+            android:background="#ecf0f1" />
+
+        <LinearLayout
+            android:id="@+id/testContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLine"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/testIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="@string/heartbeatFontAwesome"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tests"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/labContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/testContainer"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="@string/medkitFontAwesome"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#7f8c8d"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lab_name_ehr_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lab Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#7f8c8d"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/ehr_detail_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

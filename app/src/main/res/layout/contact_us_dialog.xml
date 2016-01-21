@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="#ffffff"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact Us"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="58dp"
+        android:textColor="#A9A9A9" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/ibcall"
+        android:src="@drawable/phoneicon"
+        android:scaleType="fitStart"
+
+        android:background="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageButton
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibmail"
+        android:scaleType="fitStart"
+
+        android:src="@drawable/mail_icon"
+        android:background="#ffffff"
+        android:adjustViewBounds="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:id="@+id/cclose"
+        android:src="@drawable/cross"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/ibmail"
+        android:layout_alignEnd="@+id/ibmail" />
+
+</RelativeLayout>

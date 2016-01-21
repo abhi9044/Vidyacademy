@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.8">
+
+            <!--<TextView
+                android:id="@+id/testName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="0dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="Test 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/infoIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="0dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="Test 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:typeface="sans" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Test 1  "
+                android:textSize="15sp"
+                android:id="@+id/testName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/infoFontAwesome"
+                android:id="@+id/infoIcon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/testResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:width="0dp"
+            android:ellipsize="end"
+            android:paddingLeft="15dp"
+            android:singleLine="false"
+            android:text="11Wg"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/testRange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:width="0dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="false"
+            android:text="12Wg-16Wg"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+

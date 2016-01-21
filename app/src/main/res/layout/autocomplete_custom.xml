@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windowBackground">
+    <TextView android:text="check this"
+        android:layout_margin="5dp"
+        android:id="@+id/fieldname"
+        android:layout_width="200dp"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:src="@drawable/small_plus_blue_24"
+        android:id="@+id/already_added"
+        android:visibility="gone"
+      />
+
+</LinearLayout>

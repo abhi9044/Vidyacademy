@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/list_item"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:layout_margin="0dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/ehr_test_name_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:width="0dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="Test 1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:id="@+id/ehr_value_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:width="0dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="11Wg"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/ehr_reference_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:width="0dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:text="12Wg-16Wg"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+

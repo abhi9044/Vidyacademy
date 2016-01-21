@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addressfieldPickup" type="id">addressfieldPickup</item>
+    <item name="layout_userList" type="id">Layout_userList</item>
+    <item name="layout_name" type="id">Linear Layout</item>
+    <item name="addAddressButton" type="id">Button</item>
+    <item name="snipper1" type="id">snipper location</item>
+</resources>

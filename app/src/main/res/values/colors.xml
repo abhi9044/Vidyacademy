@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="plate">#F9FAFF</color>
+    <color name="grey_transparent">#cc7c7c7c</color>
+    <color name="bggrey">#E6E6E6</color>
+    <color name="lightGrey">#D8D8D8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="primary">#15a6ff</color>
+    <color name="primarynotification">#1295e5</color>
+    <color name="primary_dark">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="windowBackground">#f9f9f9</color>
+    <color name="textColor">#000000</color>
+    <color name="greyfont">#F5F5F5</color>
+    <color name="button_pressed">#08298A</color>
+    <color name="grey">#848484</color>
+    <color name="dark_grey">#585858</color>
+    <color name="feed_bg">#F2F2F2</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="dialog_bg">#c2c3c8</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="darkblue">#08298A</color>
+    <color name="listviewbg">#eeeeee</color>
+    <color name="onclickcolor">#92d0f5</color>
+
+    <color name="upper">#FFFFFF</color>
+    <color name="lower">#FFFFFF</color>
+    <color name="line">#15a6ff</color>
+    <color name="circle">#15a6ff</color>
+    <color name="circlef">#FFFFFF</color>
+    <color name="font">#15a6ff</color>
+    <color name="drawerbg">#2D2D2D</color>
+    <color name="dividercolor">#585858</color>
+    <color name="lightBlue">#81DAF5</color>
+    <color name="transblack">#EE000000</color>
+    <color name="clrovertrans">#c1c1c1</color>
+
+    <color name="tab_text_color">#fff</color>
+
+    <!-- created by sheyans on 29/11/15-->
+    <color name="colorPrimary">#15a6ff</color>
+    <color name="colorAccent">#e74c3c</color>
+    <color name="colorPrimaryDark">#1295e5</color>
+
+
+</resources>

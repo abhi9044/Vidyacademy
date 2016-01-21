@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.holamed.meddapp.FacebookCheckActivity"
+    >
+
+    <TextView
+        android:id="@+id/mssg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You need to create an account to access your health records"
+        android:textColor="@color/black"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="30dp"
+        android:singleLine="false"
+        android:textStyle="bold"/>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:text="Sign up with facebook"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+

@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context="com.holamed.meddapp.FacebookCheckActivity"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    >
+
+        <TextView
+            android:id="@+id/mssg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You need to create an account to access your health records"
+            android:textColor="@color/primary"
+            android:typeface="sans"
+            android:textSize="22dp"
+            android:ellipsize="end"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="false"
+            android:textAlignment="gravity"
+            android:autoText="false"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/login_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="350dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Sign up with facebook"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK "
+        android:textColor="@color/white"
+        android:id="@+id/backfb"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
