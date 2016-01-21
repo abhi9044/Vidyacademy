@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Medd</string>
+    <string name="app_name">Vidyacademy</string>
     <string name="server_url">http://api.medd.in</string>
 
     <string name="hello_world">Hello world!</string>
