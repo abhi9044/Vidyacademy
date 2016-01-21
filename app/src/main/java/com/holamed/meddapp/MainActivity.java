@@ -99,11 +99,16 @@ public class MainActivity extends ActionBarActivity {
         loginPrefs = this.getSharedPreferences("MeddLoginDetails", Context.MODE_PRIVATE);
         loginEditor = loginPrefs.edit();
         if (isConnected()) {
-            new Reada().execute("name");
+            db2.addContact(new Contact("Indore"));
+            db2.addContact(new Contact("Mumbai"));
+            db2.addContact(new Contact("Jaipur"));
+            db2.addContact(new Contact("Lucknow"));
+
         } else {
             db2.addContact(new Contact("Indore"));
             db2.addContact(new Contact("Mumbai"));
             db2.addContact(new Contact("Jaipur"));
+            db2.addContact(new Contact("Lucknow"));
         }
 
         ye = this;
@@ -174,7 +179,7 @@ public class MainActivity extends ActionBarActivity {
                 public void run() {
                     Intent i;
                     if(loginPrefs.getBoolean("firstTime",true)){
-                        loginEditor.putBoolean("firstTime",false);
+                        loginEditor.putBoolean("firstTime",true);
                         loginEditor.commit();
                         i = new Intent(MainActivity.this, TutorialActivityMedd.class);
                         Log.d("shreyDebug","condition true");

@@ -71,7 +71,7 @@ DatabaseHandler db2;
     private String city;
     private List<String> categories;
     // Tab titles
-    private String[] tabs = { "Order", "History"};
+    private String[] tabs = { "Home", "Dashboard"};
 Button citySelect;
     int position=0;
     private MixpanelAPI mixpanel;

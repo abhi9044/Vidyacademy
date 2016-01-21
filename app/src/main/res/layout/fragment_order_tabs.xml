@@ -57,7 +57,7 @@
                             android:layout_gravity="center_vertical"
                             android:gravity="center_horizontal"
                             android:paddingLeft="10dp"
-                            android:text="Book Lab Tests"
+                            android:text="Tutors"
                             android:textColor="@color/primary"
                             android:textSize="21dp"
                             android:textStyle="normal" />
@@ -69,7 +69,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_gravity="center_vertical"
                             android:paddingLeft="10dp"
-                            android:text="Upto 50% off on all tests"
+                            android:text="Search for potential tutors/Register if you are a tutor"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             android:textStyle="normal" />
@@ -117,7 +117,7 @@
                             android:layout_alignParentBottom="true"
                             android:gravity="center_horizontal"
                             android:paddingLeft="10dp"
-                            android:text="Health Checkups"
+                            android:text="Library"
                             android:textColor="@color/primary"
                             android:textSize="21dp"
                             android:textStyle="normal" />
@@ -129,7 +129,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:paddingLeft="10dp"
-                            android:text="Best Packages from Top labs"
+                            android:text="Rent/Donate/Search Books"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             android:textStyle="normal" />
@@ -189,7 +189,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
                             android:paddingLeft="10dp"
-                            android:text="Health checkup camps &amp; more"
+                            android:text="Register for a teaching camp and help the society grow"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             android:textStyle="normal" />
@@ -214,7 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medd Apples"
+                    android:text="VA-Blogs"
                     android:id="@+id/textView11"
                    android:layout_toRightOf="@+id/imageView5"
                     android:textColor="@color/primary"
@@ -231,7 +231,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:paddingLeft="10dp"
-                android:text="Health Tips and Articles"
+                android:text="Education Tips and Articles"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="normal"
