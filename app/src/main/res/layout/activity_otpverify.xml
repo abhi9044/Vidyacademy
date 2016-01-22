@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:orientation="horizontal">
 
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressBarOTP" />
+
     <RelativeLayout
         android:id="@+id/relativeLayoutOTP"
         android:layout_width="match_parent"
@@ -13,7 +21,8 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.holamed.meddapp.OTPVerifyActivity">
+        tools:context="com.holamed.meddapp.OTPVerifyActivity"
+        android:layout_gravity="right|top">
 
         <EditText
             android:id="@+id/phoneEditText"
@@ -23,47 +32,68 @@
             android:layout_centerVertical="true"
             android:ems="10"
             android:hint="Enter number here"
-            android:inputType="phone" />
-
-        <TextView
-            android:id="@+id/textViewOTP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="44dp"
-            android:gravity="center"
-            android:text="Please verify your mobile number"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <TextView
-            android:id="@+id/textviewotpsome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:layout_marginTop="110dp"
-
-            android:text="You will receive a One Time Password via SMS" />
+            android:inputType="phone"
+            android:visibility="gone" />
 
         <Button
-            android:id="@+id/buttonDone"
-            android:layout_width="wrap_content"
+            android:id="@+id/bSubmittutor"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="66dp"
             android:background="@color/colorAccent"
-            android:text="Done"
+            android:text="SIGNUP"
             android:textColor="@color/white" />
+
+        <RelativeLayout
+            tools:context="com.holamed.meddapp.OTPVerifyActivity"
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="right|top"
+            android:visibility="visible"
+            android:layout_alignTop="@+id/phoneEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Enter number here"
+                android:inputType="phone"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bapplytutor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="TUTOR LOGIN"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/bslogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Student Login"
+                android:textColor="@color/white"
+                android:layout_above="@+id/bapplytutor"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
     </RelativeLayout>
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:id="@+id/progressBarOTP" />
 </FrameLayout>

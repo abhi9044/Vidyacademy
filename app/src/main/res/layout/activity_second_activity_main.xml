@@ -54,7 +54,7 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
 
-                        android:text="Welcome @Medd"
+                        android:text="Welcome @Vidyacademy"
 
                         android:textColor="#ffffff"
                         android:textSize="20dp"

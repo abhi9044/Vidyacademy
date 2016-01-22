@@ -14,18 +14,7 @@
     <string name="title_activity_image_preview">Image preview</string>
 
     <string name="title_activity_registration">Registration</string>
-<string name="about">Medd is a platform that caters to all your medical diagnostic needs. You can book your tests and procedures from the app at the best labs and hospitals.
-\n
-Additionally, you can also avail:
-
-    \n
-1. Home collection of sample
-\n
-2. e-Reports - your medical reports on your phone
-\n
-3. Tailored health checkup packages to screen your body before disease strikes
-\n
-4. Discounts: amazing deals on packages and individual tests</string>
+    <string name="about">Vidyacademy is online tutor finding app.Find the tutor that best fits your child on push of a button</string>
     <string name="title_activity_search_tests">SearchTests</string>
 
     <string name="radiology">Radiology</string>
@@ -187,4 +176,6 @@ Additionally, you can also avail:
     <string name="title_activity_feedback">Help Us!</string>
     <string name="title_activity_terms">Terms</string>
     <string name="title_activity_category_search_radio">CategorySearchRadio</string>
+    <string name="title_activity_tutor_login">TutorLogin</string>
+    <string name="title_activity_slogin">Slogin</string>
 </resources>

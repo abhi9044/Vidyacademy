@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressBarOTP" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutOTP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.holamed.meddapp.OTPVerifyActivity"
+        android:layout_gravity="right|top">
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Enter number here"
+            android:inputType="phone"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            tools:context="com.holamed.meddapp.OTPVerifyActivity"
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="right|top"
+            android:visibility="visible"
+            android:layout_alignTop="@+id/phoneEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="Enter number here"
+                android:inputType="phone"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bapplytutor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Apply for Tutor"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/bfindtutor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Find Tutor"
+                android:textColor="@color/white"
+                android:layout_above="@+id/bapplytutor"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/breqtutor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Request a tutor"
+                android:textColor="@color/white"
+                android:layout_below="@+id/bapplytutor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

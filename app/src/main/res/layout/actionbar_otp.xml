@@ -38,7 +38,7 @@
         android:layout_weight="3"
         android:gravity="center"
         android:id="@+id/custom_title"
-        android:text="OTP Verification"/>
+        android:text="Login/SignUp"/>
     <!-- android:gravity="center"-->
 
 

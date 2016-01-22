@@ -32,6 +32,8 @@ public class OTPReceiveActivity extends AppCompatActivity {
     ImageView back;
     ImageView home;
     Button buttonDone;
+    Button bslogin;
+    Button btlogin;
     String gotoClass;
     EditText editText;
     TextView textViewHeader;
@@ -49,7 +51,7 @@ public class OTPReceiveActivity extends AppCompatActivity {
     final String verifyOTPurl = AppControllerSearchTests.serverUrl + "/api/newUsers/verifyOtp/?phone=";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("shreyDebug", "oncreate OTPReceiveActivity");
         setContentView(R.layout.activity_otpverify);
@@ -101,19 +103,32 @@ public class OTPReceiveActivity extends AppCompatActivity {
                 }
             }
         });
-
+bslogin=(Button)findViewById(R.id.bslogin);
+        bslogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(OTPReceiveActivity.this,Slogin.class);
+                startActivity(i);
+            }
+        });
+btlogin=(Button)(findViewById(R.id.bapplytutor));
 
         dbpast = new PastOrdersDB(this.getApplicationContext());
-        buttonDone = (Button) findViewById(R.id.buttonDone);
+        buttonDone = (Button) findViewById(R.id.bSubmittutor);
         editText = (EditText) findViewById(R.id.phoneEditText);
-        textViewHeader = (TextView) findViewById(R.id.textViewOTP);
-        textviewSubText = (TextView) findViewById(R.id.textviewotpsome);
-        relativeLayout = findViewById(R.id.relativeLayoutOTP);
+         relativeLayout = findViewById(R.id.relativeLayoutOTP);
         progressBar = findViewById(R.id.progressBarOTP);
 
         loginPrefs = this.getSharedPreferences("MeddLoginDetails", Context.MODE_PRIVATE);
         loginEditor=loginPrefs.edit();
+btlogin.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent i =new Intent(getApplicationContext(),TutorLogin.class);
+        startActivity(i);
 
+    }
+});
         buttonDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

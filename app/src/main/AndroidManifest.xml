@@ -203,6 +203,30 @@
             android:name=".TutorialActivityMedd"
             android:label="@string/title_activity_tutorial_activity_medd" />
         <activity
+            android:name=".TutorLogin"
+            android:label="title_aactivity_medd" />
+        <activity
+            android:name=".TutorProfile"
+            android:label="title" />
+        <activity
+            android:name=".Findtutor"
+            android:label="titleeeee" />
+        <activity
+            android:name=".Slogin"
+            android:label="aactivity_medd" />
+        <activity
+            android:name=".StudentProfile"
+            android:label="pro" />
+        <activity
+            android:name=".RequestTutor"
+            android:label="pro" />
+        <activity
+            android:name=".Tutor"
+            android:label="wpro" />
+        <activity
+            android:name=".StudentProg"
+            android:label="pro" />
+        <activity
             android:name=".SecondActivityMain"
             android:label="@string/title_activity_second_activity_main"
             android:screenOrientation="portrait"

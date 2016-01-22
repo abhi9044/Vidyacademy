@@ -6,25 +6,100 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc48b9e4-8cdc-433c-b05a-1700857f7d91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/blog1.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/blog1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Findtutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/RequestTutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Slogin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProfile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Tutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorProfile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_findtutor.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_request_tutor.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_slogin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_profile.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_prog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_login.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_slogin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_tutor_login.xml" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\1_commons_lang3_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\AF_Android_SDK_v3_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\Parse.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\android_observablescrollview_1_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\appcompat_v7_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\bolts_android_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\circleimageview_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\commons_lang3_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\design_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\facebook_android_sdk_4_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\httpclient_4_3_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\httpcore_4_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\httpmime_4_3_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_0_0_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_1_10_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_2_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\library_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\mediarouter_v7_22_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\mixpanel_android_4_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\multidex_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_ads_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_analytics_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_appindexing_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_appinvite_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_appstate_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_base_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_basement_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_cast_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_drive_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_fitness_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_games_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_gcm_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_identity_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_location_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_maps_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_measurement_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_nearby_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_panorama_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_plus_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_safetynet_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_vision_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_wallet_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\play_services_wearable_8_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\recyclerview_v7_21_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\support_annotations_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\support_v4_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Abhishek\Desktop\Vidyacademy\.idea\libraries\volley.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/checkups.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/checkups.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/opener.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/opener.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tut_1.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tut_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tut_2.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tut_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tut_3.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tut_3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tut_4.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tut_4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tests.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tests.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/adapter/AliasAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/adapter/AliasAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/AppControllerSearchTests.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/AppControllerSearchTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OrderTabsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OrderTabsFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/actionbar_otp.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/actionbar_otp.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_otpverify.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_otpverify.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_second_activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_second_activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/healthcheckuprow.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/healthcheckuprow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_aboutus.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_aboutus.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Vidyacademy.iws" />
@@ -82,77 +157,47 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding>
-                <element signature="e#2177#2195#0" expanded="true" />
-                <element signature="e#3026#3065#0" expanded="true" />
-                <element signature="e#3172#3188#0" expanded="true" />
-                <element signature="e#3390#3408#0" expanded="true" />
-                <element signature="e#5053#5082#0" expanded="true" />
-                <element signature="e#5920#5962#0" expanded="true" />
-                <element signature="e#6102#6135#0" expanded="true" />
-                <element signature="e#7008#7048#0" expanded="true" />
-                <element signature="e#7687#7727#0" expanded="true" />
-                <element signature="e#7865#7902#0" expanded="true" />
-                <element signature="e#8746#8793#0" expanded="true" />
-                <element signature="e#8888#8933#0" expanded="true" />
-                <element signature="e#10137#10177#0" expanded="true" />
-                <element signature="e#10266#10304#0" expanded="true" />
-                <element signature="e#12145#12183#0" expanded="true" />
-                <element signature="e#12733#12761#0" expanded="true" />
-                <element signature="e#12848#12883#0" expanded="true" />
-                <element signature="e#12981#13020#0" expanded="true" />
-                <element signature="e#13111#13142#0" expanded="true" />
-                <element signature="e#13227#13260#0" expanded="true" />
-                <element signature="e#13342#13372#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.448276">
-              <caret line="124" column="50" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
-              <folding>
-                <element signature="e#17935#20082#0" expanded="true" />
-                <element signature="e#20081#20082#0" expanded="true" />
-                <element signature="e#20084#20332#0" expanded="true" />
-                <element signature="e#20331#20332#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="269" column="20" selection-start-line="269" selection-start-column="20" selection-end-line="269" selection-end-column="20" />
+              <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
+      <file leaf-file-name="Findtutor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Findtutor.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OTPReceiveActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java">
+      <file leaf-file-name="RequestTutor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/RequestTutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90710384">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HealthCheckUpNew.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="448" column="44" selection-start-line="448" selection-start-column="44" selection-end-line="448" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -160,12 +205,58 @@
       </file>
       <file leaf-file-name="fragment_order_tabs.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_tutor.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_slogin.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slogin.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tutor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Tutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.63950616">
+              <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TutorLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1996,36 +2087,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_top_rated.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_top_rated_patho.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_closest_fragment_radio.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_closest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_events.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_health_cat1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_health_cat2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment_healthcheckup.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/test_click.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_aboutus.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/past_patients_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/padding.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_past_patients.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/ehr_listrow.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/About.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Memo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUp_Date_Select.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/adapter/EventsArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration_events.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorialFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Confirmation_Events.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/EHR.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Registration.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Registration_Events.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_tabs.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HistoryTabsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/RegistrationHealth.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SecondActivityMain.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/listview_item_row.xml" />
@@ -2041,12 +2103,41 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/ConfirmationRadpath.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/CategorySearch.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/PastPatients.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/AppControllerSearchTests.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HistoryTabsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_tutor_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/actionbar_otp.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SlidingTabStrip.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_otpverify.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_slogin.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorProfile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Slogin.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_student_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProg.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProfile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_second_activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/adapter/AliasAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_aboutus.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OrderTabsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/healthcheckuprow.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/AppControllerSearchTests.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_findtutor.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Findtutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_request_tutor.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/RequestTutor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Tutor.java" />
       </list>
     </option>
   </component>
@@ -2083,6 +2174,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scratches" />
       <pane id="AndroidView">
@@ -2137,7 +2229,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2160,8 +2251,12 @@
       <recent name="C:\Users\Abhishek\Desktop\tests4less-android\app\src\main\java\com\holamed\meddapp" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.holamed.meddapp" />
       <recent name="layout-v11" />
       <recent name="layout" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2595,42 +2690,49 @@
       <option name="project" value="LOCAL" />
       <updated>1453364777774</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="SecondMain Layout Ready">
+      <created>1453371086197</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1453371086197</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26360545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2693,162 +2795,488 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java</url>
+          <line>37</line>
+          <properties field="editText" class="com.holamed.meddapp.TutorLogin" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2177#2195#0" expanded="true" />
-            <element signature="e#3026#3065#0" expanded="true" />
-            <element signature="e#3172#3188#0" expanded="true" />
-            <element signature="e#3390#3408#0" expanded="true" />
-            <element signature="e#5053#5082#0" expanded="true" />
-            <element signature="e#5920#5962#0" expanded="true" />
-            <element signature="e#6102#6135#0" expanded="true" />
-            <element signature="e#7008#7048#0" expanded="true" />
-            <element signature="e#7687#7727#0" expanded="true" />
-            <element signature="e#7865#7902#0" expanded="true" />
-            <element signature="e#8746#8793#0" expanded="true" />
-            <element signature="e#8888#8933#0" expanded="true" />
-            <element signature="e#10137#10177#0" expanded="true" />
-            <element signature="e#10266#10304#0" expanded="true" />
-            <element signature="e#12145#12183#0" expanded="true" />
-            <element signature="e#12733#12761#0" expanded="true" />
-            <element signature="e#12848#12883#0" expanded="true" />
-            <element signature="e#12981#13020#0" expanded="true" />
-            <element signature="e#13111#13142#0" expanded="true" />
-            <element signature="e#13227#13260#0" expanded="true" />
-            <element signature="e#13342#13372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/opener.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8392857">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#2177#2195#0" expanded="true" />
-            <element signature="e#3026#3065#0" expanded="true" />
-            <element signature="e#3172#3188#0" expanded="true" />
-            <element signature="e#3390#3408#0" expanded="true" />
-            <element signature="e#5053#5082#0" expanded="true" />
-            <element signature="e#5920#5962#0" expanded="true" />
-            <element signature="e#6102#6135#0" expanded="true" />
-            <element signature="e#7008#7048#0" expanded="true" />
-            <element signature="e#7687#7727#0" expanded="true" />
-            <element signature="e#7865#7902#0" expanded="true" />
-            <element signature="e#8746#8793#0" expanded="true" />
-            <element signature="e#8888#8933#0" expanded="true" />
-            <element signature="e#10137#10177#0" expanded="true" />
-            <element signature="e#10266#10304#0" expanded="true" />
-            <element signature="e#12145#12183#0" expanded="true" />
-            <element signature="e#12733#12761#0" expanded="true" />
-            <element signature="e#12848#12883#0" expanded="true" />
-            <element signature="e#12981#13020#0" expanded="true" />
-            <element signature="e#13111#13142#0" expanded="true" />
-            <element signature="e#13227#13260#0" expanded="true" />
-            <element signature="e#13342#13372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.448276">
           <caret line="124" column="50" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
-          <folding>
-            <element signature="e#17935#20082#0" expanded="true" />
-            <element signature="e#20081#20082#0" expanded="true" />
-            <element signature="e#20084#20332#0" expanded="true" />
-            <element signature="e#20331#20332#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Detailed_Blogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="269" column="20" selection-start-line="269" selection-start-column="20" selection-end-line="269" selection-end-column="20" />
-          <folding />
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/widget/ScrollView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8333334">
+          <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HistoryTabsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.310345">
+          <caret line="165" column="63" selection-start-line="165" selection-start-column="58" selection-end-line="165" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_slogin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/actionbar_otp.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_tutor_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71428573">
+          <caret line="35" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#807#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SecondActivityMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04404145">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_row_radio.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_single.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_header_row.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SlidingTabStrip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28266034">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3992674">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_login.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7586207">
+          <caret line="60" column="16" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OTPReceiveActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90710384">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2885906">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33221477">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding>
+            <element signature="e#272#305#0" expanded="true" />
+            <element signature="e#330#365#0" expanded="true" />
+            <element signature="e#391#426#0" expanded="true" />
+            <element signature="e#450#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_prog.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pastorders_listrow.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/StudentProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4827585">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_otpverify.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_second_activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5344827">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/adapter/AliasAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="77" selection-start-line="124" selection-start-column="77" selection-end-line="124" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6296296">
+          <caret line="16" column="121" selection-start-line="16" selection-start-column="121" selection-end-line="16" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_aboutus.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#1637#1652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3103447">
+          <caret line="129" column="21" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/OrderTabsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.827586">
+          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/EventsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.75862">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/EventsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3103447">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/healthcheckuprow.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/AppControllerSearchTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.75862">
+          <caret line="1042" column="63" selection-start-line="1042" selection-start-column="63" selection-end-line="1042" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Slogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.62069">
+          <caret line="193" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_findtutor.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_request_tutor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9827586">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Findtutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/RequestTutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/HealthCheckUpNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_order_tabs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slogin.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/SearchTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="448" column="44" selection-start-line="448" selection-start-column="44" selection-end-line="448" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/TutorLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/holamed/meddapp/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63950616">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
           <folding />
         </state>
       </provider>

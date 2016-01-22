@@ -134,7 +134,7 @@ public class OrderTabsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getActivity(), SearchTests.class);
+                Intent intent = new Intent(getActivity(), Findtutor.class);
                 getActivity().startActivity(intent);
             }
         });
@@ -150,7 +150,7 @@ public class OrderTabsFragment extends Fragment {
             public void onClick(View v) {
 
                 Intent intent = new Intent(getActivity(), HealthCheckUpNew.class);
-                getActivity().startActivity(intent);
+               getActivity().startActivity(intent);
             }
         });
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -248,7 +248,7 @@ public class OrderTabsFragment extends Fragment {
             ImageView imgV = (ImageView) row.findViewById(R.id.imageblog);
             na.setText(namelist.get(position));
             date.setText(datelist.get(position));
-            cont.setText(android.text.Html.fromHtml(contentlist.get(position).substring(0, 150) + "..."));
+            cont.setText(contentlist.get(position) + "...");
             if (!(imagelist.get(position).equals("noimage"))) {
                 imgLoader.DisplayImage(imagelist.get(position), R.drawable.blog1, imgV);
             }
@@ -266,25 +266,14 @@ public class OrderTabsFragment extends Fragment {
         HttpResponse r = client.execute(get);
         int status = r.getStatusLine().getStatusCode();
         if (status == 200) {
-            HttpEntity e = r.getEntity();
-            String data = EntityUtils.toString(e);
-            JSONArray main = new JSONArray(data);
             for (int i = 0; i < 1; i++) {
-                JSONObject a = main.getJSONObject(i);
-                JSONObject b = a.getJSONObject("title");
-                JSONObject c = a.getJSONObject("content");
-                try {
-                    JSONObject z = a.getJSONObject("better_featured_image");
-                    String imgurl = z.getString("source_url");
-                    image_url.add(imgurl);
-                } catch (Exception ex) {
                     image_url.add("noimage");
-                }
-                nameblog.add(b.getString("rendered"));
-                contentblog.add(c.getString("rendered"));
-                String date = a.getString("date").substring(8, 10);
-                String month = a.getString("date").substring(5, 7);
-                String link = a.getString("link");
+
+                nameblog.add("Name of the blog");
+                contentblog.add("This is the content");
+                String date = "21";
+                String month = "01";
+                String link = "";
                 blog_link.add(link);
                 String monthgot = null;
                 if (month.equals("01"))

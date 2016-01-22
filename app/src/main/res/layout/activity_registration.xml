@@ -151,6 +151,19 @@
                 android:background="@drawable/edittextborder"
                 android:textColorHint="@color/lightGrey"
                 android:layout_marginTop="10dip"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:hint="Subjects"
+                android:padding="5dip"
+                android:background="@drawable/edittextborder"
+                android:textColorHint="@color/lightGrey"
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center_horizontal" />
+
             <EditText android:id="@+id/refferal"
                 android:layout_width="250dip"
                 android:layout_height="wrap_content"
@@ -174,7 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
         android:layout_alignParentBottom="true"
-        android:text="CONFIRM BOOKING"
+        android:text="SUBMIT"
         android:textStyle="bold"
         android:background="@color/colorAccent"
         android:textColor="@color/white"

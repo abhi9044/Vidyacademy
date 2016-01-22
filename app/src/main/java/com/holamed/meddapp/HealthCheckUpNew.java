@@ -35,7 +35,7 @@ public class HealthCheckUpNew extends AppCompatActivity {
     private ActionBar actionBar;
     private View mToolbarViewnew;
 
-    private String[] tabs = {"ALL", "Heart", "Women","Common Tests"};
+    private String[] tabs = {"ALL", "Academics", "Fiction","Technology"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,7 @@ public class HealthCheckUpNew extends AppCompatActivity {
         parent.setContentInsetsAbsolute(0, 0);
 
         TextView title_name = (TextView) customActionBarView.findViewById(R.id.custom_title);
-        title_name.setText("Health Checkups");
+        title_name.setText("LIBRARY");
         ImageView home = (ImageView) findViewById(R.id.home_pressed);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

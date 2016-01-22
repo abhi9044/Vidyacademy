@@ -122,7 +122,7 @@ public class AliasAdapter extends BaseAdapter {
         int len1 = alialist.get(position).getName().length();
         int len2 = alialist.get(position).getAlias().length();
         if (len1 != len2)
-            holder.aliases.setText("AKA-" + alialist.get(position).getAlias().substring(len1 + 1));
+            holder.aliases.setText("AKA-" + alialist.get(position).getAlias());
         else
             holder.aliases.setText("");
         holder.id.setText(alialist.get(position).getId());

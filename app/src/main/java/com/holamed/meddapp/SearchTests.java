@@ -250,47 +250,11 @@ public class SearchTests extends AppCompatActivity implements
         currentCityString = loginPrefs.getString("citySelected", "Indore");
 
         //if(responses saved inside AppControllerSearchTests){get those} -> basically works as a cache
-        if (AppControllerSearchTests.getSearchtesname() != null) {
-            Log.d("shreyDebug", "if condition true");
-
-            testName = AppControllerSearchTests.getSearchtesname();
-            testKey = AppControllerSearchTests.getSearchteskey();
-            testAliases = AppControllerSearchTests.getSearchtesalias();
-            testType = AppControllerSearchTests.getSearchtestype();
-            for (int i = 0; i < testName.size(); i++) {
-                Alias setalia = new Alias(testName.get(i), testAliases.get(i), testKey.get(i), testType.get(i), false);
-
-                arralias.add(setalia);
-                Log.d("Settingwa", testName.get(i).toString());
-
-            }
-            onPostExecuteFetchTestTask(arralias);
-
-        } else {
-            if (loginPrefs.contains("FetchedData") && (((System.currentTimeMillis() / (1000 * 60 * 60)) % 24) - ((loginPrefs.getLong("LastTimeUpdated", 0) / (1000 * 60 * 60)) % 24)) < 24) {
-                Log.d("shreyDebug", "yay");
-                String data = loginPrefs.getString("FetchedData", "");
-                setStringToArrayList(data);
-
-                testName = AppControllerSearchTests.getSearchtesname();
-                testKey = AppControllerSearchTests.getSearchteskey();
-                testAliases = AppControllerSearchTests.getSearchtesalias();
-                testType = AppControllerSearchTests.getSearchtestype();
-                for (int i = 0; i < testName.size(); i++) {
-                    Alias setalia = new Alias(testName.get(i), testAliases.get(i), testKey.get(i), testType.get(i), false);
-
-                    arralias.add(setalia);
-                    Log.d("Settingwa", testName.get(i).toString());
-
-                }
-                onPostExecuteFetchTestTask(arralias);
-            } else {
                 if (isConnected())
                     new FetchTestsTask().execute(currentCityString);
                 else
                     Toast.makeText(getApplicationContext(), "Network Error!", Toast.LENGTH_SHORT).show();
-            }
-        }
+
         // Locate the EditText in listview_main.xml
         auto = (EditText) findViewById(R.id.searchEditText);
 
@@ -383,46 +347,33 @@ public class SearchTests extends AppCompatActivity implements
     private void doInBackgroundFetchTestTask(String... userID) {
         String gotcity = userID[0].substring(0, 1).toLowerCase() + userID[0].substring(1);
         StringBuilder url = new StringBuilder(URL + "?city=" + gotcity);
-        int j;
-
-        HttpGet get = new HttpGet(url.toString());
-        HttpResponse r = null;
-        try {
-            r = client.execute(get);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int status = r.getStatusLine().getStatusCode();
-        if (status == 200) {
-            loginPrefs = SearchTests.this.getSharedPreferences("MeddLoginDetails", Context.MODE_PRIVATE);
-            loginEditor = loginPrefs.edit();
-            loginEditor.putLong("LastTimeUpdated", System.currentTimeMillis());
-            loginEditor.commit();
-
-            HttpEntity e = r.getEntity();
-            String data = null;
-            try {
-                data = EntityUtils.toString(e);
-
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-            loginPrefs = SearchTests.this.getSharedPreferences("MeddLoginDetails", Context.MODE_PRIVATE);
-            loginEditor = loginPrefs.edit();
-            loginEditor.putString("FetchedData", data);
-            loginEditor.commit();
-
-            setStringToArrayList(data);
-
-        }
         arralias.clear();
-        for (int i = 0; i < testName.size(); i++) {
-            Alias setalia = new Alias(testName.get(i), testAliases.get(i), testKey.get(i), testType.get(i), false);
-
+            Alias setalia = new Alias("Maths", "Elementary", "", "", false);
             arralias.add(setalia);
-
-        }
+        setalia = new Alias("Maths", "Elementary", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("Maths", "Middle School", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("Maths", "High School", "", "", false);
+        arralias.add(setalia);
+      setalia = new Alias("Maths", "Intermediate", "", "", false);
+        arralias.add(setalia);
+       setalia = new Alias("Maths", "Advance", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("Social Science", "Elementary", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("English", "Elementary", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("English", "Advance", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("Computers", "Elementary", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("PCM", "Advance", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("PCM", "Elementary", "", "", false);
+        arralias.add(setalia);
+        setalia = new Alias("Maths", "Kids", "", "", false);
+        arralias.add(setalia);
     }
 
     private void setStringToArrayList(String data) {
@@ -496,39 +447,8 @@ public class SearchTests extends AppCompatActivity implements
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> checkedtests = new ArrayList<String>();
-                ArrayList<String> pathology = new ArrayList<String>();
-                ArrayList<String> radiology = new ArrayList<String>();
-
-                ArrayList<Alias> testList = adapterlist.arraylist;
-                for (int i = 0; i < testList.size(); i++) {
-                    Alias tests = testList.get(i);
-                    if (tests.isSelected()) {
-                        checkedtests.add(tests.getName());
-                    }
-                }
-                for (int i = 0; i < testName.size(); i++) {
-                    for (int l = 0; l < checkedtests.size(); l++) {
-                        if (testName.get(i).equals(checkedtests.get(l))) {
-                            if (testType.get(i).equals("pathology"))
-                                pathology.add("\"" + testKey.get(i) + "\"");
-                            else
-                                radiology.add("\"" + testKey.get(i) + "\"");
-
-                        }
-                    }
-                }
-                AppControllerSearchTests.setSelectedPatho(pathology);
-                AppControllerSearchTests.setSelectedRadio(radiology);
-                if (pathology.isEmpty() && radiology.isEmpty())
-                    Toast.makeText(SearchTests.this, "Please select atleast one test", Toast.LENGTH_SHORT).show();
-                else if ((!(pathology.isEmpty())) && !((radiology.isEmpty()))) {
-                    Intent category = new Intent(SearchTests.this, CategorySearchRadio.class);
-                    startActivity(category);
-                } else {
-                    Intent category = new Intent(SearchTests.this, CategorySearch.class);
-                    startActivity(category);
-                }
+                Intent i=new Intent(SearchTests.this,Tutor.class);
+                startActivity(i);
             }
         });
 

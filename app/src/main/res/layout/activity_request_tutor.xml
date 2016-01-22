@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/windowBackground"
+    android:layout_height="match_parent" >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingBottom="50dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_marginTop="10dip"
+                android:id="@+id/linearLayout3">
+                <!-- First Name Label -->
+
+                <!--android:onClick="onCheckboxClicked"/>-->
+                <EditText android:id="@+id/firstName_field"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"
+                    android:hint="Name"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    />
+                <!-- Last Name Label -->
+                <EditText android:id="@+id/mobile_field"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Subject"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="8dip"/>
+                <!--Email-->
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Email"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="8dip"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText android:id="@+id/email_field"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Student Class"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="8dip"
+                    />
+
+                <!--Date of Birth-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dip"
+                    >
+                    <!--  Email Label -->
+                    <LinearLayout
+                        android:layout_marginTop="1dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        <EditText android:id="@+id/age_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="Age"
+                            android:padding="5dip"
+                            android:background="@drawable/edittextborder"
+                            android:textColorHint="@color/lightGrey"
+                            android:layout_marginTop="8dip"
+                            android:inputType="number" />
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/gender"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dip"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="male"
+                                android:layout_marginLeft="10dip"
+                                android:textColor="@color/black"
+                                android:buttonTint="@color/primary"
+                                android:id="@+id/male" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="female"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="20dip"
+                                android:buttonTint="@color/primary"
+                                android:id="@+id/female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="*Address required for Home Collection"
+                    android:id="@+id/addnote"
+                    android:textColor="#000000"
+                    android:layout_marginTop="8dp" />
+
+                <EditText android:id="@+id/line1"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:hint="Address Line 1"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="10dip"/>
+                <EditText android:id="@+id/line2"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:hint="Address Line 2"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="10dip"/>
+                <EditText android:id="@+id/pincode"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:hint="Pincode"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="10dip"/>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:hint="Any other detail"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="10dip"
+                    android:layout_gravity="center_horizontal" />
+
+                EditText android:id="@+id/refferal"
+                    android:layout_width="250dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:hint="Refferal Code(Optional)"
+                    android:padding="5dip"
+                    android:background="@drawable/edittextborder"
+                    android:textColorHint="@color/lightGrey"
+                    android:layout_marginTop="10dip"/>
+
+
+
+                <!-- Register Button -->
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

@@ -901,12 +901,12 @@ public class AppControllerSearchTests extends MultiDexApplication {
                             }
 
                             DealsItem d = new DealsItem();
-                            d.setDeal_name(deal_name);
+                            d.setDeal_name("Book1");
                             d.setId(id);
                             d.setAddressLab(addresslab.toString());
                             d.setNum_Test(String.valueOf(num_test));
                             d.setLab_main(main_lab);
-                            d.setDeal_desc(deal_desc);
+                            d.setDeal_desc("Book Description");
                             d.setDeal_total(ptotal);
                             d.setDeal_medd(pmedd);
                             d.setDeal_list(plist);
@@ -1023,7 +1023,7 @@ public class AppControllerSearchTests extends MultiDexApplication {
                             if ((event.getBoolean(PUBLISH))) {
                                 if (event.getString("city").equals(tempcity)) {
                                     String id = event.getString("_id");
-                                    String name = event.getString("name");
+                                    String name = "Teaching camp at Mahalunge Village";
                                     String type = event.getString("type");
                                     Log.d("eventName", name);
                                     String price = event.getString("price");
@@ -1063,7 +1063,7 @@ public class AppControllerSearchTests extends MultiDexApplication {
                                         medd = Double.parseDouble(testgroups.getJSONObject(k).getString("medd"));
 
                                         EventTestgroup test = new EventTestgroup();
-                                        test.setName(testname);
+                                        test.setName("Teaching camp at Mahalunge Village");
                                         test.setId(testId);
                                         test.setMedd(medd);
                                         test.setMrp(mrp);
